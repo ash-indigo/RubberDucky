@@ -12,4 +12,8 @@
 9. Repeat steps 3–9 for each example you want to load.
 
 ## Writing script for Rubber Ducky
-For some reason the Rubber Ducky types in US keyboard, so you'll need to replace " with @ in your script that the Rubber Ducky types to make it work.
+You'll need to change the language on the https://payloadstudio.com/community/ website when compiliing
+1. Go to https://payloadstudio.com/community/
+2. Select Settings
+3. Select Compiler Settings
+4. Change language to gb.json
