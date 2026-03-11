@@ -12,7 +12,7 @@
 9. Repeat steps 3–9 for each example you want to load.
 
 ## Writing script for Rubber Ducky
-You'll need to change the language on the https://payloadstudio.com/community/ website when compiliing
+You'll need to change the language on the https://payloadstudio.com/community/ website when compiliing.
 1. Go to https://payloadstudio.com/community/
 2. Select Settings
 3. Select Compiler Settings
