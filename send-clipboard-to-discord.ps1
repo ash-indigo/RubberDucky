@@ -1,8 +1,3 @@
-param(
-    [Parameter(Mandatory = $true)]
-    [string]$WebhookUrl
-)
-
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $pcName     = $env:COMPUTERNAME
@@ -92,4 +87,5 @@ while ($true) {
 
     Start-Sleep -Seconds 1
 }
+
 
