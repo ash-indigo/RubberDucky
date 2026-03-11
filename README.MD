@@ -10,3 +10,6 @@
 8. **Cut** and paste the downloaded payload file onto your Ducky.  
     i. If you **copy** instead of cut, make sure to delete the original file so the final filename on the Ducky is exactly `inject.bin` (names like `inject (1).bin` will **not** work).  
 9. Repeat steps 3–9 for each example you want to load.
+
+## Writing script for Rubber Ducky
+For some reason the Rubber Ducky types in US keyboard, so you'll need to replace " with @ in your script that the Rubber Ducky types to make it work.
