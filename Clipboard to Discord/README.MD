@@ -8,5 +8,5 @@
 6. Click **Generate Payload** at the bottom-left of PayloadStudio.  
 7. Download the generated payload (and source if you want a copy).  
 8. **Cut** and paste the downloaded payload file onto your Ducky.  
-9. If you **copy** instead of cut, make sure to delete the original file so the final filename on the Ducky is exactly `inject.bin` (names like `inject (1).bin` will **not** work).  
-10. Repeat steps 3–9 for each example you want to load.
+    i. If you **copy** instead of cut, make sure to delete the original file so the final filename on the Ducky is exactly `inject.bin` (names like `inject (1).bin` will **not** work).  
+9. Repeat steps 3–9 for each example you want to load.
