@@ -9,5 +9,5 @@ DELAY 2000
 STRING for ($i=0; $i -lt 50; $i++) { (new-object -com wscript.shell).SendKeys([char]175) }
 ENTER
 DELAY 2000
-STRING Start-Process "https://www.youtube.com/watch?v=Aq5WXmQQooo&list=RDAq5WXmQQooo&start_radio=1"
+STRING Start-Process "https://www.youtube.com/watch?v=a7Lq6ZlSqys"
 ENTER
