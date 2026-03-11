@@ -1,5 +1,5 @@
 ## Entering the Discord webhook
-Obviously we don't want to give out the webhook to your private server. You'll beed to set the webhook in both payloads before converting them.
+Obviously we don't want to give out the webhook to your private server. You'll need to set the webhook in both payloads before converting them.
 1. Open Discord
 2. Select your server
 3. Select and edit (settings wheel) your channel
