@@ -20,3 +20,8 @@ Search and replace INPUT YOUR DISCORD WEBHOOK HERE in both payloads with your Di
 4. Replace (PID) in **Stop-Process -Id (PID) -Force**
 5. Run your updated **Stop-Process -Id (PID) -Force** .e.g **Stop-Process -Id 27888 -Force**
 
+OR
+
+1. Open Powershall
+2. run **Stop-Process -Name "powershell"**
+
