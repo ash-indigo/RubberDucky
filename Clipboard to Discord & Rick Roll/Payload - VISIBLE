@@ -5,6 +5,7 @@ GUI r
 DELAY 500
 STRING powershell 
 ENTER
+DELAY 1000
 STRING Start-Process 'https://streamable.com/lf027o'
 ENTER
 DELAY 1000
