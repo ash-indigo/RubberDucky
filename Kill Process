@@ -1,0 +1,10 @@
+REM Clipboard loader from GitHub
+
+DELAY 2000
+GUI r
+DELAY 1000
+STRING powershell
+ENTER
+DELAY 1000
+STRING Stop-Process -Name "powershell"; exit
+ENTER
